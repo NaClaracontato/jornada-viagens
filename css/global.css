@@ -44,7 +44,7 @@ body {
 }
 
 .section-title h2 {
-  font-size: 28px;
+  font-size: 32px;
   font-weight: var(--title-weight);
   margin: 0;
   text-align: center;
@@ -69,12 +69,6 @@ body {
   display: inline-block;
   text-decoration: none;
   line-height: 64px;
-}
-
-@media screen and (min-width: 768px) {
-  .section-title {
-    font-size: 32px;
-  }
 }
 
 @media screen and (min-width: 1024px) {
