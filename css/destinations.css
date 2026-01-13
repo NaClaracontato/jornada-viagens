@@ -1,78 +1,81 @@
+.destinations {
+  width: 312px;
+  margin: 0 auto;
+}
+
 .destinations-itens {
-  margin: auto;
   display: flex;
   flex-direction: column;
   gap: 24px;
   align-items: center;
 }
 
-.destinations-itens .item header {
-  display: block;
-  background-color: transparent;
-  padding: 0;
-  position: static;
-  font-size: 28px;
-}
-
-.destinations-itens .item p {
-  width: 312px;
+.destinations .item p {
   font-size: 20px;
   font-weight: var(--text-weight);
   line-height: 32px;
   margin-bottom: 24px;
 }
 
-.destinations-itens .item .button {
-  width: 312px;
-  text-align: center;
+.destinations .button {
+  width: 100%;
 }
 
 .destinations-itens .item .img-item {
-  width: 312px;
+  width: 100%;
   height: 360px;
   margin-top: 40px;
 }
 
 .destinations-itens .item .img-item.tokyo {
-  background: url(../images/tokyo-mobile.jpg) no-repeat;
+  background: url(../images/tokyo-mobile.jpg);
   background-size: cover;
 }
 
 .destinations-itens .item .img-item.osaka {
-  background: url(../images/osaka-mobile.jpg) no-repeat;
+  background: url(../images/osaka-mobile.jpg);
   background-size: cover;
 }
 
 @media screen and (min-width: 768px) {
-  .destinations-itens .item p {
-    width: 628px;
+  .destinations {
+    width: 648px;
   }
-
   .destinations-itens .item .img-item {
-    width: 628px;
+    width: 100%;
     height: 452px;
   }
 
   .destinations-itens .item .img-item.tokyo {
-    background: url(../images/tokyo-tablet-desktop.jpg) no-repeat;
+    background: url(../images/tokyo-tablet-desktop.jpg);
+    background-size: cover;
   }
 
   .destinations-itens .item .img-item.osaka {
-    background: url(../images/osaka-tablet-desktop.jpg) no-repeat;
+    background: url(../images/osaka-tablet-desktop.jpg);
+    background-size: cover;
+  }
+
+  .destinations .button {
+    width: 280px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .destinations {
+    width: 900px;
+  }
+  .destinations .item .img-item {
+    width: 100%;
+    height: 452px;
   }
 }
 
 @media screen and (min-width: 1440px) {
+  .destinations {
+    width: 1200px;
+  }
   .destinations-itens {
     flex-direction: row;
-  }
-
-  .destinations-itens .item .img-item {
-    width: 588px;
-    height: 452px;
-  }
-
-  .destinations-itens .item p {
-    width: 588px;
   }
 }
