@@ -18,7 +18,7 @@
 
   --title-weight: 700;
   --text-weight: 400;
-  --menu-texto-weight: 500;
+  --menu-text-weight: 500;
 }
 
 /* CSS RESET */
@@ -44,27 +44,25 @@ body {
 }
 
 section {
-  width: 312px;
+  width: 100%;
   margin: 0 auto 88px;
 }
 
-section.hero {
+section.hero,
+section.bottom-hero {
   width: 100%;
   margin: 0;
 }
-
 .section-title {
   width: 280px;
   margin: 0 auto 32px;
 }
-
 .section-title h2 {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: var(--title-weight);
   margin: 0;
   text-align: center;
 }
-
 .section-title hr {
   width: 180px;
   height: 4px;
@@ -78,7 +76,6 @@ section.hero {
   font-weight: var(--title-weight);
   margin: 0 0 24px;
 }
-
 .content-text {
   font-size: 20px;
   font-weight: var(--text-weight);
@@ -105,7 +102,6 @@ section.hero {
   }
   .section-title {
     width: 100%;
-    margin: 0 auto 32px;
   }
   .section-title h2 {
     font-size: 32px;
